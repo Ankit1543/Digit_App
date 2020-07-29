@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Digit Recognizer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm">
+      <h3>Draw Here</h3>
+        <div class="wrapper">
+            <canvas drawable (newImage)="predict($event)" ></canvas><br>
+        </div>
+	<button ion-button icon-only (click)="eraseButton()"color="secondary">_Erase_
+  <ion-icon name="create"></ion-icon>
+</button>
+
+    </div>
+    <div class="col-sm">
+        <h3>TensorFlow Prediction</h3>
+        <chart [data]="prediction"></chart>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h5 color="red">*Wait Karo Dada!!!</h5>
+
+
+
+</ion-content>
+

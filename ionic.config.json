@@ -1,0 +1,9 @@
+{
+  "name": "tensor",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "ionic-angular",
+  "id": "d27aee20"
+}
